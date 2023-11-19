@@ -70,7 +70,8 @@ html {
     cursor: pointer;
     transition-duration: .2s;
 }
-#conteudo section #add-task .btn-black:hover {
+#conteudo section #add-task .btn-black:hover,
+#conteudo section #add-task .btn-black:focus {
     background-color: gray;
 }
 #conteudo section #add-task .btn-black:active {
@@ -109,7 +110,8 @@ html {
     padding: 1% 1.5% 1% 1.4%;
     transition-duration: .2s;
 }
-#conteudo section #coisas #lista li .remover:hover {
+#conteudo section #coisas #lista li .remover:hover,
+#conteudo section #coisas #lista li .remover:focus {
     background-color: #ff4545;
 }
 #conteudo section #coisas #lista li .remover:active {
@@ -132,7 +134,8 @@ html {
     cursor: pointer;
     transition-duration: .2s;
 }
-#conteudo section #coisas #lista li .conclusao:hover {
+#conteudo section #coisas #lista li .conclusao:hover,
+#conteudo section #coisas #lista li .conclusao:focus {
     background-color: lightgreen;
 }
 #conteudo section #coisas #lista li .conclusao:active {
@@ -154,7 +157,8 @@ html {
     transition-duration: .2s;
     box-shadow: 1px 1px 1px #00000034;
 }
-#conteudo section #coisas #lista li .editar:hover {
+#conteudo section #coisas #lista li .editar:hover, 
+#conteudo section #coisas #lista li .editar:focus {
     background-image: linear-gradient(45deg, #fbf8cc, #fde4cf, #ffcfd2, #f1c0e8, #cfbaf0, #a3c4f3, #90dbf4, #8eecf5, #98f5e1, #b9fbc0);
     color: black;
 }
@@ -242,7 +246,8 @@ html {
     cursor: pointer;
     transition-duration: .2s;
 }
-#modal-edit #edicao .edit .botoes button:hover {
+#modal-edit #edicao .edit .botoes button:hover,
+#modal-edit #edicao .edit .botoes button:focus {
     background-color: #ff6498;
 }
 #modal-edit #edicao .edit .botoes button:active {
@@ -271,7 +276,8 @@ html {
     font-weight: bolder;
     transition-duration: .4s;
 }
-#rodape #topo:hover {
+#rodape #topo:hover,
+#rodape #topo:focus {
     background-color: #b9fbc0;
     color: white;
 }
@@ -288,7 +294,8 @@ html {
     border-radius: 1em;
     transition-duration: .2s;
 }
-#rodape a:hover {
+#rodape a:hover,
+#rodape a:focus {
     background-color: #b9fbc0;
     color: white;
     padding: 1px 6px;

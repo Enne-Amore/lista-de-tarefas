@@ -202,9 +202,9 @@ function cunharTagLi(tarefa) {
     
     // Colocando as filhas na mãe
     li.appendChild(span)
+    li.appendChild(editar)
     li.appendChild(conclusao)
     li.appendChild(remover)
-    li.appendChild(editar)
     li.appendChild(descricao)
 
     return li
