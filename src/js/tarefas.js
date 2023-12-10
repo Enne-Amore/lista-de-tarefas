@@ -54,7 +54,10 @@ adicionar.addEventListener('click', () => {
                 descricao: ''
             }
 
-            adicionarTarefa(tarefa)    
+            adicionarTarefa(tarefa)
+
+            // Melhor acessibilidade
+            tarefa_input.focus()
         }
 })
 
@@ -306,7 +309,6 @@ function redenrizarListaHTML() {
     }
 
     tarefa_input.value = ''
-    tarefa_input.focus()
 }
 
 // Salvação das tarefas ao Local Storage
