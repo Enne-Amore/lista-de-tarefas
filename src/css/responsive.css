@@ -1,0 +1,69 @@
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 4.5vw;
+    }
+
+    #cabecalho p {
+        padding: 0 15%;
+    }
+
+    #conteudo {
+        margin: 10% auto;
+        font-size: 1.2em;
+    }
+    #conteudo section {
+        margin: auto 5%;
+    }
+    #conteudo section #add-task {
+        padding: 5% 8%;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    #conteudo section #add-task div {
+        display: flex;
+        gap: 0.5em;
+    }
+    #conteudo section #add-task div:nth-last-child(2n) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3em;
+    }
+    #conteudo section #add-task input {
+        border-width: 1.5px;
+        padding: 2%;
+    }
+    #conteudo section #add-task .btn-black {
+        width: auto;
+        height: auto;
+        padding: 5%;
+    }
+
+    #conteudo section #coisas {
+        padding: 2% 4%;
+        min-height: 52vh;
+    }
+    #conteudo section #coisas #lista li {
+        padding: 7%;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    #conteudo section #coisas #lista li .nome {
+        width: 100%;
+    }
+    #conteudo section #coisas #lista li .opc {
+        margin-right: -30%;
+    }
+
+    #modal-edit #edicao {
+        top: 30%;
+        left: 13%;
+        padding: 6%;
+        padding-top: 1%;
+    }
+}
+
+@media screen and (min-height: 700px) {
+    #conteudo section #coisas {
+        min-height: 60vh;
+    }
+}

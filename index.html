@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="tarefas.js" defer></script>
-    <script src="topo.js" defer></script>
+    <script src="src/js/tarefas.js" defer></script>
+    <script src="src/js/topo.js" defer></script>
 </head>
 <body>
     
@@ -21,10 +22,14 @@
          <section>
 
             <article id="add-task">
-                <label for="tarefa">Tarefa:</label>
-                <input type="text" name="tarefa" id="tarefa" placeholder="Adicione um item à sua lista">
-                <button class="btn-black" type="button" id="adicionar">Adicionar</button>
-                <button class="btn-black" type="reset" id="apagarTudo">Apagar Tudo</button>
+                <div>
+                    <label for="tarefa">Tarefa:</label>
+                    <input type="text" name="tarefa" id="tarefa" placeholder="Adicione um item à sua lista">
+                </div>
+                <div>
+                    <button class="btn-black" type="button" id="adicionar">Adicionar</button>
+                    <button class="btn-black" type="reset" id="apagarTudo">Apagar Tudo</button>
+                </div>
             </article>
 
             <article id="coisas">

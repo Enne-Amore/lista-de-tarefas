@@ -167,9 +167,12 @@ function cunharTagLi(tarefa) {
     let li = document.createElement('li')
     li.id = tarefa.id
 
-    let span = document.createElement('span')
-    span.classList.add('nome')
-    span.textContent = tarefa.tarefa_nome
+    let span_nome = document.createElement('span')
+    span_nome.classList.add('nome')
+    span_nome.textContent = tarefa.tarefa_nome
+
+    let span_opc = document.createElement('span')
+    span_opc.classList.add('opc')
 
     // Função de concluir e desconcluir tarefa
     let conclusao = document.createElement('button')
@@ -201,11 +204,13 @@ function cunharTagLi(tarefa) {
     
     
     // Colocando as filhas na mãe
-    li.appendChild(span)
-    li.appendChild(editar)
-    li.appendChild(conclusao)
-    li.appendChild(remover)
-    li.appendChild(descricao)
+    li.appendChild(span_nome)
+    li.appendChild(span_opc)
+    
+    span_opc.appendChild(editar)
+    span_opc.appendChild(conclusao)
+    span_opc.appendChild(remover)
+    span_opc.appendChild(descricao)
 
     return li
 }
@@ -267,6 +272,7 @@ function concluirTarefa(idTarefa) {
 
 }
 
+// Função de abrir o modal de edição
 function alternarJanelaEdicao() {
     modalEdit.show()
     edicao.style.display = 'block'

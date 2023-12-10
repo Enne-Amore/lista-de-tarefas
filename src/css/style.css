@@ -47,17 +47,27 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
-    width: 66%;
-    padding: 1.5% 3%;
+    gap: 1em;
+    padding: 2% 3%;
     box-shadow: 1px 1px 5px #00000034;
+}
+#conteudo section #add-task div {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
 
 #conteudo section #add-task input, #conteudo section #add-task .btn-black {
     font-size: 0.8em;
-    padding: 1%;
+    padding: 1.5%;
     border-radius: 0.5em;
+}
+#conteudo section #add-task input {
     width: max-content;
+}
+#conteudo section #add-task .btn-black {
+    width: 8em;
+    height: 2em;
 }
 
 #conteudo section #add-task .btn-black, #conteudo section #lista li .remover {
@@ -71,7 +81,7 @@ html {
     transition-duration: .2s;
 }
 #conteudo section #add-task .btn-black:hover,
-#conteudo section #add-task .btn-black:focus {
+#conteudo section #add-task .btn-black:focus-visible {
     background-color: gray;
 }
 #conteudo section #add-task .btn-black:active {
@@ -90,28 +100,37 @@ html {
 }
 #conteudo section #coisas #lista li {
     list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ff6498;
     color: white;
     box-shadow: 1px 1px 1px #00000034;
     border-radius: 2em;
-    padding: 2%;
-    margin: 3% auto;
-    position: relative;
+    padding: 1.5% 2%;
+    padding-right: 9%;
+    margin: 3% 0;
     font-weight: bold;
+}
+#conteudo section #coisas #lista li .nome {
+    display: flex;
+    width: 85%;
+}
+#conteudo section #coisas #lista li .opc {
+    display: flex;
+    gap: 0.5em;
 }
 
 #conteudo section #coisas #lista li .remover {
-    position: absolute;
     background-color: brown;
     box-shadow: 1px 1px 1px #00000034;
-    right: 2%;
-    top: 15%;
     font-size: 1em;
-    padding: 1% 1.5% 1% 1.4%;
+    padding: 8% 12%;
     transition-duration: .2s;
 }
 #conteudo section #coisas #lista li .remover:hover,
-#conteudo section #coisas #lista li .remover:focus {
+#conteudo section #coisas #lista li .remover:focus-visible {
     background-color: #ff4545;
 }
 #conteudo section #coisas #lista li .remover:active {
@@ -120,22 +139,19 @@ html {
 }
 
 #conteudo section #coisas #lista li .conclusao {
-    position: absolute;
     background-color: darkgreen;
     color: white;
     box-shadow: 1px 1px 1px #00000034;
     border: 0;
     border-radius: 5em;
-    padding: 1% 1.1% 0.9%;
-    right: 8%;
-    top: 15%;
+    padding: 8% 10%;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     transition-duration: .2s;
 }
 #conteudo section #coisas #lista li .conclusao:hover,
-#conteudo section #coisas #lista li .conclusao:focus {
+#conteudo section #coisas #lista li .conclusao:focus-visible {
     background-color: lightgreen;
 }
 #conteudo section #coisas #lista li .conclusao:active {
@@ -143,14 +159,11 @@ html {
 }
 
 #conteudo section #coisas #lista li .editar {
-    position: absolute;
     background-image: linear-gradient(45deg, #ff00d0, #6200ff, #006aff, #00bfff);
     color: white;
-    top: 15%;
-    right: 14%;
     border: 0;
     border-radius: 5em;
-    padding: 1% 1.5%;
+    padding: 8% 12%;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
@@ -158,7 +171,7 @@ html {
     box-shadow: 1px 1px 1px #00000034;
 }
 #conteudo section #coisas #lista li .editar:hover, 
-#conteudo section #coisas #lista li .editar:focus {
+#conteudo section #coisas #lista li .editar:focus-visible {
     background-image: linear-gradient(45deg, #fbf8cc, #fde4cf, #ffcfd2, #f1c0e8, #cfbaf0, #a3c4f3, #90dbf4, #8eecf5, #98f5e1, #b9fbc0);
     color: black;
 }
@@ -247,7 +260,7 @@ html {
     transition-duration: .2s;
 }
 #modal-edit #edicao .edit .botoes button:hover,
-#modal-edit #edicao .edit .botoes button:focus {
+#modal-edit #edicao .edit .botoes button:focus-visible {
     background-color: #ff6498;
 }
 #modal-edit #edicao .edit .botoes button:active {
@@ -277,7 +290,7 @@ html {
     transition-duration: .4s;
 }
 #rodape #topo:hover,
-#rodape #topo:focus {
+#rodape #topo:focus-visible {
     background-color: #b9fbc0;
     color: white;
 }
@@ -295,7 +308,7 @@ html {
     transition-duration: .2s;
 }
 #rodape a:hover,
-#rodape a:focus {
+#rodape a:focus-visible {
     background-color: #b9fbc0;
     color: white;
     padding: 1px 6px;
