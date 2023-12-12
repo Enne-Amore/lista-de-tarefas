@@ -1,8 +1,12 @@
+
 @media screen and (max-width: 1200px) {
     body {
         font-size: 4.5vw;
     }
 
+    #cabecalho {
+        border-radius: 0 0 35% 35%;
+    }
     #cabecalho p {
         padding: 0 15%;
     }
@@ -16,12 +20,13 @@
     }
     #conteudo section #add-task {
         padding: 5% 8%;
+        border-radius: 1em 1em 0 0;
         flex-direction: column;
         gap: 0.8em;
     }
     #conteudo section #add-task div {
         display: flex;
-        gap: 0.5em;
+        gap: 0.8em;
     }
     #conteudo section #add-task div:nth-last-child(2n) {
         flex-direction: column;
@@ -35,7 +40,7 @@
     #conteudo section #add-task .btn-black {
         width: auto;
         height: auto;
-        padding: 5%;
+        padding: 6%;
     }
 
     #conteudo section #coisas {
@@ -43,9 +48,10 @@
         min-height: 52vh;
     }
     #conteudo section #coisas #lista li {
-        padding: 7%;
+        padding: 6%;
         flex-direction: column;
-        gap: 0.5em;
+        gap: 0.6em;
+        border-radius: 1em;
     }
     #conteudo section #coisas #lista li .nome {
         width: 100%;
@@ -55,15 +61,33 @@
     }
 
     #modal-edit #edicao {
-        top: 30%;
-        left: 13%;
+        top: 25%;
+        left: 3%;
         padding: 6%;
         padding-top: 1%;
     }
+
+    #rodape {
+        padding: 5%;
+        border-radius: 30% 30% 0 0;
+    }
+    #rodape #topo {
+        font-size: 2em;
+        padding: 2%;
+    }
+    #rodape p:nth-last-child(2n) {
+        margin: 3% auto 3%;
+    }
 }
 
+/* Especificidades de cada tela */
 @media screen and (min-height: 700px) {
     #conteudo section #coisas {
         min-height: 60vh;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    #modal-edit #edicao {
+        top: 20%;
     }
 }

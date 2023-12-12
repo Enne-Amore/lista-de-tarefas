@@ -317,3 +317,7 @@ html {
     background-color: white;
     color: #b9fbc0;
 }
+
+#rodape p:nth-last-child(2n) {
+    margin: 1% auto 1.5%;
+}
