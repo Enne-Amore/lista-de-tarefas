@@ -34,7 +34,7 @@
 | Cor               | Hexadecimal                                                      |
 | ----------------- | ---------------------------------------------------------------- |
 | Margenta          | ![#ff0055](https://via.placeholder.com/10/ff0055?text=+) #ff0055 |
-| Cinza Clara       | ![#d3d3d3](https://via.placeholder.com/10/d3d3d3?text=+) #d3d3d3 |
+| Cinza Clara       | ![#e2e2e2](https://via.placeholder.com/10/e2e2e2?text=+) #e2e2e2 |
 | Rosa Escura       | ![#ff6498](https://via.placeholder.com/10/ff6498?text=+) #ff6498 |
 | Rosa Clara        | ![#ffadad](https://via.placeholder.com/10/ffadad?text=+) #ffadad |
 | Vemelha Barro     | ![#ff4545](https://via.placeholder.com/10/ff4545?text=+) #ff4545 |

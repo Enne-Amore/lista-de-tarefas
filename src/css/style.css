@@ -42,7 +42,7 @@ html {
 }
 
 #conteudo section #add-task {
-    background-color: lightgray;
+    background-color: #e2e2e2;
     border-radius: 2em 2em 0 0;
     display: flex;
     justify-content: center;
@@ -90,7 +90,7 @@ html {
 }
 
 #conteudo section #coisas {
-    background-color: #d3d3d3;
+    background-color: #e2e2e2;
     width: 100%;
     min-height: 10em;
     padding: 2% 6%;
@@ -108,7 +108,7 @@ html {
     color: white;
     box-shadow: 1px 1px 1px #00000034;
     border-radius: 2em;
-    padding: 1.5% 2%;
+    padding: 1.5% 3%;
     padding-right: 9%;
     margin: 3% 0;
     font-weight: bold;

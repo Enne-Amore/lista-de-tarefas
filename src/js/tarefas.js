@@ -184,7 +184,7 @@ function cunharTagLi(tarefa) {
     conclusao.setAttribute("onclick", "concluirTarefa("+ tarefa.id +")")
     if (tarefa.concluida) {
         li.style.textDecoration = 'line-through'
-        li.style.color = 'lightgray'
+        li.style.color = '#e2e2e2'
     }
 
     // Função de remover tarefa
