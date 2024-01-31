@@ -13,28 +13,29 @@
     <script src="src/js/topo.js" defer></script>
 </head>
 <body>
-    
     <header id="cabecalho">
         <h1>Lista de tarefas</h1>
+
         <p>Anotações para se lembrar do que precisa fazer</p>
     </header>
 
     <main id="conteudo">
          <section>
-
             <article id="add-task">
                 <div>
                     <label for="tarefa">Tarefa:</label>
+                    
                     <input type="text" name="tarefa" id="tarefa" placeholder="Adicione um item à sua lista">
                 </div>
+
                 <div>
                     <button class="btn-black" type="button" id="adicionar">Adicionar</button>
+                    
                     <button class="btn-black" type="reset" id="apagarTudo">Apagar Tudo</button>
                 </div>
             </article>
 
             <article id="coisas">
-
                 <!--Lista que será feite pele usuárie-->
                 <ul id="lista">
 
@@ -42,34 +43,32 @@
 
                 <!--Modal de edição para manipular nome e descrição da tarefa-->
                 <dialog id="modal-edit">
-
                     <!--Imagem de fundo clicável para sair do modal-->
                     <div id="janelaEdicaoFundo" class="janelaEdicaoFundo"></div>
 
                     <section id="edicao">
-
                         <span id="idTarefaEdicao"></span>
+                        
                         <h3 id="nome-antigo">Personalize sua tarefa</h3>
 
                         <article class="edit">
                             <input type="text" name="edit-tarefa" id="edit-tarefa" placeholder="Mude o nome da tarefa">
+                            
                             <textarea name="descricaoTarefa" id="descricaoTarefa" placeholder="Descreva sua tarefa aqui" cols="30" rows="7"></textarea>
+                            
                             <div class="botoes">
                                 <button type="button" id="concluir-edit">Salvar</button>
+                                
                                 <button type="button" id="fechar-edit">Fechar</button>
                             </div>
                         </article>
-
                     </section>
                 </dialog>
-
             </article>
-
         </section>
     </main>
 
     <footer id="rodape">
-
         <span class="material-symbols-outlined" id="topo" aria-hidden="true" tabindex="0">
             keyboard_arrow_up
         </span>
@@ -81,8 +80,6 @@
         <p>
             Ícones feitos por <a href="https://www.flaticon.com/br/autores/manshagraphics" title="manshagraphics" target="_blank" rel="external"> manshagraphics </a> from <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank" rel="external">www.flaticon.com</a>
         </p>
-        
     </footer>
-
 </body>
 </html>

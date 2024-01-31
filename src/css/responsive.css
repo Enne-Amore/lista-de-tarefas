@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 @media screen and (max-width: 1200px) {
     body {
@@ -61,10 +62,8 @@
     }
 
     #modal-edit #edicao {
-        top: 25%;
-        left: 3%;
+        position: fixed;
         padding: 6%;
-        padding-top: 1%;
     }
 
     #rodape {
@@ -84,10 +83,5 @@
 @media screen and (min-height: 700px) {
     #conteudo section #coisas {
         min-height: 60vh;
-    }
-}
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-    #modal-edit #edicao {
-        top: 20%;
     }
 }

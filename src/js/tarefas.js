@@ -63,7 +63,7 @@ adicionar.addEventListener('click', () => {
 
 // Funcionalidade de fechar o modal de edição
 function fecharModal() {
-    modalEdit.close()
+    modalEdit.style.display = 'none'
     janelaEdicaoFundo.style.display = 'none'
     edicao.style.display = 'none'
 }
@@ -277,13 +277,11 @@ function concluirTarefa(idTarefa) {
 
 // Função de abrir o modal de edição
 function alternarJanelaEdicao() {
-    modalEdit.show()
-    edicao.style.display = 'block'
-    janelaEdicaoFundo.style.display = 'block'
+    modalEdit.style.display = 'flex'
+    edicao.style.display = 'flex'
+    janelaEdicaoFundo.style.display = 'flex'
     
 }
-
-
 
 function obterIndiceTarefaPorId(idTarefa) {
     const indiceTarefa = tarefas.findIndex(t => t.id == idTarefa)
