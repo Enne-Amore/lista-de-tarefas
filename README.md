@@ -38,6 +38,7 @@
 | Rosa Escura       | ![#ff6498](https://via.placeholder.com/10/ff6498?text=+) #ff6498 |
 | Rosa Clara        | ![#ffadad](https://via.placeholder.com/10/ffadad?text=+) #ffadad |
 | Vemelha Barro     | ![#ff4545](https://via.placeholder.com/10/ff4545?text=+) #ff4545 |
+| Roxa              | ![#6200ff](https://via.placeholder.com/10/6200ff?text=+) #6200ff |
 | Verde Clara       | ![#b9fbc0](https://via.placeholder.com/10/b9fbc0?text=+) #b9fbc0 |
 
 

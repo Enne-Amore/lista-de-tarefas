@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     body {
         font-size: 4.5vw;
     }
@@ -40,7 +40,7 @@
     }
     #conteudo section #add-task .btn-black {
         width: auto;
-        height: auto;
+        min-height: 4em;
         padding: 6%;
     }
 
@@ -76,6 +76,39 @@
     }
     #rodape p:nth-last-child(2n) {
         margin: 3% auto 3%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    body {
+        font-size: 3vw;
+    }
+
+    #cabecalho {
+        padding-bottom: 3%;
+        border-radius: 0 0 35% 35%;
+    }
+
+    #conteudo section {
+        margin: auto 2%;
+    }
+
+    #conteudo section #coisas {
+        padding: 2% 4%;
+        min-height: 40vh;
+    }
+    #conteudo section #coisas #lista li {
+        padding: 2% 5%;
+        padding-right: 13.5%;
+    }
+
+    #modal-edit #edicao {
+        padding: 4%;
+    }
+
+    #rodape #topo {
+        font-size: 1.5em;
+        padding: 1.5%;
     }
 }
 

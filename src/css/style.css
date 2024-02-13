@@ -1,21 +1,8 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
-/* A mente do site */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font: 1.8vw Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-}
-html {
-    scroll-behavior: smooth;
-}
-
+/* Cabeçalho */
 #cabecalho {
-    background-color: #ff0055;
+    background-color: var(--margenta);
     color: white;
     border-radius: 0 0 50% 50%;
     text-align: center;
@@ -24,12 +11,14 @@ html {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    animation: cima 1s ease-out;
 }
 #cabecalho h1 {
     text-transform: capitalize;
     margin-bottom: -4px;
 }
 
+/* Conteúdo */
 #conteudo {
     margin: 3% auto 4%;
 }
@@ -43,7 +32,7 @@ html {
 }
 
 #conteudo section #add-task {
-    background-color: #e2e2e2;
+    background-color: var(--cinza-clara);
     border-radius: 2em 2em 0 0;
     display: flex;
     justify-content: center;
@@ -51,6 +40,8 @@ html {
     gap: 1em;
     padding: 2% 3%;
     box-shadow: 1px 1px 5px #00000034;
+    opacity: 0;
+    animation: cima 1s ease-out .5s both;
 }
 #conteudo section #add-task div {
     display: flex;
@@ -74,11 +65,9 @@ html {
 #conteudo section #add-task .btn-black, #conteudo section #lista li .remover {
     background-color: black;
     color: white;
-    border: 0;
     border-radius: 1em;
     padding: 2%;
     font-weight: 600;
-    cursor: pointer;
     transition-duration: .2s;
 }
 #conteudo section #add-task .btn-black:hover,
@@ -91,13 +80,15 @@ html {
 }
 
 #conteudo section #coisas {
-    background-color: #e2e2e2;
+    background-color: var(--cinza-clara);
     width: 100%;
     min-height: 10em;
     padding: 2% 6%;
     margin: auto 5%;
     border-radius: 1em;
     box-shadow: 1px 1px 10px #0000001f;
+    opacity: 0;
+    animation: cima 1s ease-out .8s both;
 }
 #conteudo section #coisas #lista li {
     list-style: none;
@@ -105,7 +96,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6498;
+    background-color: var(--rosa-escura);
     color: white;
     box-shadow: 1px 1px 1px #00000034;
     border-radius: 2em;
@@ -132,23 +123,21 @@ html {
 }
 #conteudo section #coisas #lista li .remover:hover,
 #conteudo section #coisas #lista li .remover:focus-visible {
-    background-color: #ff4545;
+    background-color: var(--vermelha-barro);
 }
 #conteudo section #coisas #lista li .remover:active {
     background-color: white;
-    color: #ff4545;
+    color: var(--vermelha-barro);
 }
 
 #conteudo section #coisas #lista li .conclusao {
     background-color: darkgreen;
     color: white;
     box-shadow: 1px 1px 1px #00000034;
-    border: 0;
     border-radius: 5em;
     padding: 8% 10%;
     font-size: 1em;
     font-weight: bold;
-    cursor: pointer;
     transition-duration: .2s;
 }
 #conteudo section #coisas #lista li .conclusao:hover,
@@ -160,14 +149,12 @@ html {
 }
 
 #conteudo section #coisas #lista li .editar {
-    background-image: linear-gradient(45deg, #ff00d0, #6200ff, #006aff, #00bfff);
+    background-image: linear-gradient(45deg, #ff00d0, var(--roxa), #006aff, #00bfff);
     color: white;
-    border: 0;
     border-radius: 5em;
     padding: 8% 12%;
     font-size: 1em;
     font-weight: bold;
-    cursor: pointer;
     transition-duration: .2s;
     box-shadow: 1px 1px 1px #00000034;
 }
@@ -177,7 +164,7 @@ html {
     color: black;
 }
 #conteudo section #coisas #lista li .editar:active {
-    background-image: linear-gradient(45deg, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, white);
+    background-image: linear-gradient(45deg, var(--rosa-clara), #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, white);
 }
 
 #modal-edit {
@@ -185,7 +172,7 @@ html {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 0;
     border: 0;
     background-color: transparent;
@@ -204,6 +191,8 @@ html {
     width: 100vw;
     height: 100vh;
     background: #0000004d;
+    animation: aparecer .3s ease-out both;
+    z-index: 1;
 }
 
 #modal-edit #edicao {
@@ -215,7 +204,7 @@ html {
     top: 5%;
     bottom: 5%;
     z-index: 1;
-    background-color: #6200ff;
+    background-color: var(--roxa);
     color: white;
     padding: 2%;
     border-radius: 1em;
@@ -224,6 +213,7 @@ html {
     max-width: max-content;
     max-height: max-content;
     box-shadow: 1px 1px 5px #0000004d;
+    animation: cima .3s ease-out;
 }
 #modal-edit #edicao #idTarefaEdicao {
     visibility: visible;
@@ -246,14 +236,14 @@ html {
     font-weight: 600;
     border-radius: 0.8em;
     padding: 0.5em 0.6em;
-    border: 2px dashed #ffadad;
+    border: 2px dashed var(--rosa-clara);
     color: gray;
 }
 #modal-edit #edicao .edit #descricaoTarefa {
     font-size: 0.6em;
     border-radius: 0.8em;
     padding: 0.6em;
-    border: 2px dashed #ffadad;
+    border: 2px dashed var(--rosa-clara);
     color: gray;
 }
 #modal-edit #edicao .edit .botoes {
@@ -262,35 +252,35 @@ html {
     gap: 1em;
 }
 #modal-edit #edicao .edit .botoes button {
-    border: 0;
-    background-color: #ffadad;
+    background-color: var(--rosa-escura);
     color: white;
     font-size: 0.8em;
     font-weight: bold;
     border-radius: 0.8em;
     padding: 0.6em 1em;
     width: max-content;
-    cursor: pointer;
     transition-duration: .2s;
 }
 #modal-edit #edicao .edit .botoes button:hover,
 #modal-edit #edicao .edit .botoes button:focus-visible {
-    background-color: #ff6498;
+    background-color: var(--rosa-clara);
 }
 #modal-edit #edicao .edit .botoes button:active {
-    background-color: #ff4545;
+    background-color: white;
+    color: var(--rosa-clara);
 }
 
-/* O rodapé do site */
-
+/* Rodapé */
 #rodape {
-    background-color: #ff6498;
+    background-color: var(--rosa-escura);
     color: white;
     font-size: 1.3em;
     text-align: center;
     padding: 2%;
     padding-bottom: 3%;
     border-radius: 40% 40% 0 0;
+    opacity: 0;
+    animation: baixo 1s ease-out .8s both;
 }
 
 #rodape #topo {
@@ -305,31 +295,30 @@ html {
 }
 #rodape #topo:hover,
 #rodape #topo:focus-visible {
-    background-color: #b9fbc0;
+    background-color: var(--rosa-clara);
     color: white;
 }
 #rodape #topo:active {
     background-color: white;
-    color: #b9fbc0;
+    color: var(--rosa-clara);
     transition-duration: .2s;
 }
 
 #rodape a {
-    text-decoration: none;
-    color: #b9fbc0;
+    color: var(--cinza-clara);
     font-weight: bold;
     border-radius: 1em;
     transition-duration: .2s;
 }
 #rodape a:hover,
 #rodape a:focus-visible {
-    background-color: #b9fbc0;
+    background-color: var(--rosa-clara);
     color: white;
     padding: 1px 6px;
 }
 #rodape a:active {
     background-color: white;
-    color: #b9fbc0;
+    color: var(--rosa-clara);
 }
 
 #rodape p:nth-last-child(2n) {

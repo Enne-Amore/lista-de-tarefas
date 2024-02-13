@@ -220,10 +220,15 @@ function cunharTagLi(tarefa) {
 
 // Edição de tarefa
 function editarTarefa(idTarefa) {
+    // Verificar tela maior
+    if (innerWidth > 1200) {
+        // Ir ao topo da tela
+        window.scrollTo(0, 0)
+    }
+
     // Especificidade da tarefa
     let li = document.getElementById(''+ idTarefa + '')
     if (li) {
-
         // Especificidade da edição da tarefa
         idTarefaEdicao.textContent = '#' + idTarefa
 
