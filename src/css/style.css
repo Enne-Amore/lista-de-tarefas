@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    animation: cima 1s ease-out;
+    animation: cima .5s ease-out;
 }
 #cabecalho h1 {
     text-transform: capitalize;
@@ -41,7 +41,7 @@
     padding: 2% 3%;
     box-shadow: 1px 1px 5px #00000034;
     opacity: 0;
-    animation: cima 1s ease-out .5s both;
+    animation: cima .5s ease-out .2s both;
 }
 #conteudo section #add-task div {
     display: flex;
@@ -88,7 +88,7 @@
     border-radius: 1em;
     box-shadow: 1px 1px 10px #0000001f;
     opacity: 0;
-    animation: cima 1s ease-out .8s both;
+    animation: cima .5s ease-out .4s both;
 }
 #conteudo section #coisas #lista li {
     list-style: none;
@@ -280,7 +280,7 @@
     padding-bottom: 3%;
     border-radius: 40% 40% 0 0;
     opacity: 0;
-    animation: baixo 1s ease-out .8s both;
+    animation: baixo .5s ease-out .6s both;
 }
 
 #rodape #topo {
