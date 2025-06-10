@@ -19,7 +19,12 @@
 
 ## ✅ Demonstração
 
- [Clique aqui para acessar o meu site](https://enne-amore.github.io/lista-de-tarefas/)
+ [Clique aqui para acessar o website](https://enne-amore.github.io/lista-de-tarefas/)
+
+
+## 🎞️ Pré-visualização
+
+ <img src="src/img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## 🚀 Tecnologias Utilizadas
