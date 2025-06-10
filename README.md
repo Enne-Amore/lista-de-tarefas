@@ -1,4 +1,3 @@
-
 # 🗒️ Lista De Tarefas
 
  Uma página web para criar a sua própria lista de tarefas e que utiliza o **Local Storage** para salvar as tarefas já criadas e suas alterações até que você apague-as. Vale lembrar que a persistência dos dados é feita por navegador.
@@ -19,27 +18,34 @@
 
 ## ✅ Demonstração
 
- [Clique aqui para acessar o meu site](https://enne-amore.github.io/lista-de-tarefas/)
+ [Clique aqui para acessar o website](https://enne-amore.github.io/lista-de-tarefas/)
+
+
+## 🎞️ Pré-visualização
+
+ <img src="src/img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## 🚀 Tecnologias Utilizadas
 
- - HTML
- - CSS
- - JavaScript
+ <p align="left">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" alt="CSS" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
+ </p>
 
 
 ## 🌈 Documentação De Cores
 
-| Cor               | Hexadecimal                                                      |
-| ----------------- | ---------------------------------------------------------------- |
-| Margenta          | ![#ff0055](https://via.placeholder.com/10/ff0055?text=+) #ff0055 |
-| Cinza Clara       | ![#e2e2e2](https://via.placeholder.com/10/e2e2e2?text=+) #e2e2e2 |
-| Rosa Escura       | ![#ff6498](https://via.placeholder.com/10/ff6498?text=+) #ff6498 |
-| Rosa Clara        | ![#ffadad](https://via.placeholder.com/10/ffadad?text=+) #ffadad |
-| Vemelha Barro     | ![#ff4545](https://via.placeholder.com/10/ff4545?text=+) #ff4545 |
-| Roxa              | ![#6200ff](https://via.placeholder.com/10/6200ff?text=+) #6200ff |
-| Verde Clara       | ![#b9fbc0](https://via.placeholder.com/10/b9fbc0?text=+) #b9fbc0 |
+| Cor         | Hexadecimal |
+| ----------- | ----------- |
+| Margenta    | `#ff0055`   |
+| Cinza Clara | `#e2e2e2`   |
+| Rosa Escura | `#ff6498`   |
+| Rosa Clara  | `#ffadad`   |
+| Vemelha     | `#ff4545`   |
+| Roxa        | `#6200ff`   |
+| Verde Clara | `#b9fbc0`   |
 
 
 ## 🌟 Referências De Uso
@@ -51,3 +57,4 @@
 ## 🔧 Suporte
 
  Para me contatar como suporte, o meu email é EnneFofe10@gmail.com 
+
