@@ -58,17 +58,38 @@
  ```
 
 
+## 🛠️ Instalação Local
+
+ 1. **Clone o repositório**
+ 
+ No terminal, rode o seguinte comando:
+ 
+ ```bash
+ git clone https://github.com/Enne-Amore/lista-de-tarefas.git
+ ```
+ 
+ 2. **Entre no arquivo "index.html"**
+ 
+ 3. **Rode o arquivo principal de renderização:**
+ 
+ Clique com o botão direito do mouse e selecione a seguinte opção:
+ 
+ ```bash
+ Open with Live Server
+ ```
+
+
 ## 🌈 Cores
 
-| Cor         | Hexadecimal |
-| ----------- | ----------- |
-| Margenta    | `#ff0055`   |
-| Cinza Clara | `#e2e2e2`   |
-| Rosa Escura | `#ff6498`   |
-| Rosa Clara  | `#ffadad`   |
-| Vemelha     | `#ff4545`   |
-| Roxa        | `#6200ff`   |
-| Verde Clara | `#b9fbc0`   |
+ | Cor         | Hexadecimal |
+ | ----------- | ----------- |
+ | Margenta    | `#ff0055`   |
+ | Cinza Clara | `#e2e2e2`   |
+ | Rosa Escura | `#ff6498`   |
+ | Rosa Clara  | `#ffadad`   |
+ | Vemelha     | `#ff4545`   |
+ | Roxa        | `#6200ff`   |
+ | Verde Clara | `#b9fbc0`   |
 
 
 ## 🌟 Referências de Uso
