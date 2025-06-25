@@ -83,13 +83,13 @@
 
  | Cor         | Hexadecimal |
  | ----------- | ----------- |
- | Margenta    | `#ff0055`   |
- | Cinza Clara | `#e2e2e2`   |
- | Rosa Escura | `#ff6498`   |
- | Rosa Clara  | `#ffadad`   |
- | Vemelha     | `#ff4545`   |
- | Roxa        | `#6200ff`   |
- | Verde Clara | `#b9fbc0`   |
+ | Margenta    | `#FF0055`   |
+ | Cinza Clara | `#E2E2E2`   |
+ | Rosa Escura | `#FF6498`   |
+ | Rosa Clara  | `#FFADAD`   |
+ | Vemelha     | `#FF4545`   |
+ | Roxa        | `#6200FF`   |
+ | Verde Clara | `#B9FBC0`   |
 
 
 ## 🔤 Fontes Tipográficas
