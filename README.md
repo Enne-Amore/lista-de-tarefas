@@ -35,6 +35,29 @@
  </p>
 
 
+## 📂 Estrutura do Projeto
+
+ ```plaintext
+ lista-de-tarefas/
+ ├── css/                    # Arquivos CSS
+ │   ├── reset.css       
+ │   ├── responsive.css  
+ │   ├── style.css       
+ ├── docs/                   # Arquivos de documentação do projeto
+ │   ├── autorias.txt 
+ │   ├── preview.mp4
+ ├── img/                    # Imagens utilizadas 
+ │   ├── preview.gif 
+ │   ├── tarefa.png
+ ├── js/                     # Arquivos JavaScript
+ │   ├── tarefas.js 
+ │   ├── topo.js 
+ ├── index.html              # Arquivo principal de renderização
+ ├── LICENSE                 # Arquivo de licença do projeto
+ ├── README.md
+ ```
+
+
 ## 🌈 Cores
 
 | Cor         | Hexadecimal |
