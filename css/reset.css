@@ -27,10 +27,6 @@ button {
     cursor: pointer;
 }
 
-:focus {
-    outline: 0;
-}
-
 /* Variáveis CSS */
 :root {
     --margenta: #ff0055;
