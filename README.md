@@ -92,6 +92,14 @@
  | Verde Clara | `#b9fbc0`   |
 
 
+## 🔤 Fontes Tipográficas
+
+ - **Arial, Helvetica, Sans-Serif**  
+   Exemplo de uso:  
+   `font-family: Arial, Helvetica, sans-serif;` ou 
+   `font-family: var(--padrao);`
+
+
 ## 🌟 Referências de Uso
 
  - [manshagraphics](https://www.flaticon.com/br/autores/manshagraphics)
